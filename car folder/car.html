@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O.M.C Car Company</title>
+  <link rel="stylesheet" href="car.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <img src="https://cdn.vectorstock.com/i/750p/38/48/sport-car-logo-design-fast-silhouette-icon-vector-48573848.avif" alt="Waylon Cars Logo" />
+      </div>
+      
+      
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#featured">Featured</a>
+      <a href="#inventory">Inventory</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="toggle" id="menu-toggle">&#9776;</div>
+  </header>
+
+  <!-- Main content will go here --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1><b>Your Dream Sports Car</h1>
+      <p><b>Discover our prestigious inventory featuring the finest in luxury and performance vehicles, blending innovative technology with timeless design.</p>
+      <a href="#inventory" class="btn"><b>Browse Inventory</a>
+    </div>
+    <div class="hero-images">
+      <img src="https://di-uploads-pod7.dealerinspire.com/mercedesbenzofneworleans/uploads/2019/11/suv-img-gle.jpg" alt="123">
+      <img src="https://images.pexels.com/photos/951318/pexels-photo-951318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Car 2">
+      <img src="https://media.ed.edmunds-media.com/mercedes-benz/gle-class/2025/oem/2025_mercedes-benz_gle-class_4dr-suv_gle-450-4matic_fq_oem_1_815x543.jpg" alt="Car 3">
+      <img src="https://media.ed.edmunds-media.com/mercedes-benz/gle-class/2025/oem/2025_mercedes-benz_gle-class_4dr-suv_amg-gle-63-s_fq_oem_1_815x543.jpg" alt="Car 4">
+    </div>
+  </section>
+
+
+  <section id="featured" class="car-section">
+    <h2>Featured Cars</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <div class="car-images">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/2023_Lamborghini_Aventador_Ultimae.jpg/330px-2023_Lamborghini_Aventador_Ultimae.jpg" alt="Car 1"
+        class="car-toggle-img" >
+        <img src="https://www.exoticcarhacks.com/wp-content/uploads/2024/02/KPL0gLam-1024x683.jpeg" alt=""
+        class="car-toggle-img" >
+        <h3>Lamborghini Aventador</h3>
+        <p class="price">₦120,000,000</p>
+        <button class="view-details" data-modal="car1-details">View Details</button>
+      </div>
+  
+      <!-- Repeat this block for more cars -->
+    </div>
+  
+    <!-- Modal -->
+    <div id="car1-details" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="modalImage">
+       <div id="modalCaption"></div>
+        <h3>Lamborghini Aventador</h3>
+        <p>Year: 2022</p>
+        <p>Mileage: 5,000km</p>
+        <p>Fuel: Petrol</p>
+        <p>Transmission: Automatic</p>
+        <p>Features: AC, Bluetooth, Rear Camera, Leather Seats</p>
+      </div>
+    </div>
+
+
+    <div class="car-card">
+      <div class="car-images">
+        <img src="https://dealerinspire-image-library-prod.s3.us-east-1.amazonaws.com/images/hE4J483AHsV6W9xUsDluw9X2McWJxddB8Mj80jHH.jpg" alt="Front view"
+        class="car-toggle-img" >
+        <img src="https://mphclub.com/wp-content/uploads/2023/07/red-ferrari-f8-spider-rental-dashboard-view-mph-club.webp" alt="Side view"
+        class="car-toggle-img" >
+      </div>
+      <h3>Ferrari F8</h3>
+      <p class="price">₦95,000,000</p>
+      <button class="view-details" data-modal="car2-details">View Details</button>
+    </div>
+    
+    <!-- Modal for Second Car -->
+    <div class="modal" id="car2-details">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+        <h2>Ferrari F8 Details</h2>
+        <p>Year: 2023</p>
+        <p>Engine: V8 Turbo</p>
+        <p>Top Speed: 340km/h</p>
+        <p>Transmission: Automatic</p>
+      </div>
+    </div>
+    
+  </section>
+  
+  <section id="inventory" class="inventory-section">
+    <h2>Our Inventory</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="https://example.com/car1.jpg" alt="Car 1" />
+        <h3>BMW M4</h3>
+        <p class="price">₦75,000,000</p>
+        <button class="view-details" data-modal="car3-details">View Details</button>
+      </div>
+  
+      <div class="car-card">
+        <img src="https://example.com/car2.jpg" alt="Car 2" />
+        <h3>Audi R8</h3>
+        <p class="price">₦85,000,000</p>
+        <button class="view-details" data-modal="car4-details">View Details</button>
+      </div>
+  
+      <!-- Add more cars as needed -->
+    </div>
+  
+    <!-- Modal example -->
+    <div id="car3-details" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img src="https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=264J&client=byoc&paint=P0A96&fabric=FKHSW&sa=S01CE,S01HE,S0248,S02TB,S0302,S0319,S0322,S0337,S0387,S03AG,S03DZ,S0430,S0431,S0493,S0494,S04H0,S04NW,S04UR,S0508,S0534,S05AC,S05AR,S05AU,S0688,S06AC,S06AK,S06C4,S06NX,S06U3,S0704,S0710,S0715,S0760&quality=70&bkgnd=transparent&w=9900&h=9000&x=700&y=1000&resp=png&angle=270" alt="car 1">
+        <h3>BMW M4</h3>
+        <p>Year: 2021</p>
+        <p>Mileage: 10,000km</p>
+        <p>Transmission: Automatic</p>
+        <p>Fuel Type: Petrol</p>
+        <p>Features: Sunroof, Navigation, Heated Seats</p>
+      </div>
+    </div>
+  
+    <div id="car4-details" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img src="https://www.motorscout.com.au/wp-blog/wp-content/uploads/2024/04/Audi-R8.jpg" alt="car 2">
+        <h3>Audi R8</h3>
+        <p>Year: 2022</p>
+        <p>Mileage: 4,500km</p>
+        <p>Transmission: Automatic</p>
+        <p>Fuel Type: Petrol</p>
+        <p>Features: Bang & Olufsen Audio, Drive Select, Sport Seats</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="about" class="about-section">
+    <h2 class="section-title">About Us</h2>
+
+    <div class="about-content">
+      <p>
+        At O.M.C Cars, we specialize in delivering luxury and high-performance vehicles
+        to discerning clients across the country. With a passion for sports cars and a
+        commitment to customer satisfaction, we bring you only the best in automotive excellence.
+      </p>
+      <p>
+        Our dealership offers top-tier service, a wide selection of the latest models, and
+        competitive pricing. Whether you're buying, selling, or just exploring, we're here to help.
+      </p>
+    </div>
+  </section>
+  
+  <section id="about details" class="about-section">
+    <h2>About Us</h2>
+    <p class="mission">
+      At O.M.C Car Dealership, our mission is to provide top-quality vehicles and exceptional service, ensuring a seamless and enjoyable car buying experience for all our customers.
+    </p>
+  
+    
+    <p class="vision" style="margin-bottom: 20px;">
+    <strong>Our Vision:</strong> To become the most trusted and innovative car dealership, offering excellence in service, quality, and customer satisfaction across Africa.
+    </p>
+
+
+    <div class="media-gallery">
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/736x/79/b1/d2/79b1d2a0b3efed379cb14994febf58b7.jpg" alt="Garage" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUR0sfMg73LRLgQmZLWtjQFlA0tfLeBkwAEQ&s" alt="Garage">
+        <p>Our Garage</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://www.lightmap.co.uk/dynamic_resources/blog_post_content/3129/image.jpg?1643372308" alt="Studio" />
+        <p>Our Studio</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8SLWEbys7SY?si=aYly034zETxb_JqO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      
+     </section>
+  
+
+     <section id="services" class="services-section">
+      <h2 class="section-title">Our Services</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Car Sales</h3>
+          <p>Explore a wide range of new and used vehicles available at competitive prices.</p>
+        </div>
+        <div class="service-card">
+          <h3>Repair & Maintenance</h3>
+          <p>Our expert mechanics provide top-tier car repair and maintenance services.</p>
+        </div>
+        <div class="service-card">
+          <h3>Trade-In Options</h3>
+          <p>Upgrade your vehicle easily with our fair and fast trade-in process.</p>
+        </div>
+        <div class="service-card">
+          <h3>Financial Assistance</h3>
+          <p>Get help with flexible car financing and loan support tailored for you.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="testimonials" class="testimonials-section">
+      <h3>Our Customers Say</h3> <!-- Text "Our Customers Say" -->
+    
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">"OMC Cars provided excellent service. My Ferrari was delivered on time and in perfect condition. Highly recommend!"</p>
+            <p class="customer-name">John Doe</p>
+            <p class="customer-role">Business Owner</p>
+            <div class="star-rating">
+              &#9733;&#9733;&#9733;&#9733;&#9734; <!-- 4 stars out of 5 -->
+            </div>
+          </div>
+        </div>
+    
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">"I bought my dream sports car from OMC, and the whole process was smooth and professional. A 5-star experience!"</p>
+            <p class="customer-name">Jane Smith</p>
+            <p class="customer-role">Marketing Executive</p>
+            <div class="star-rating">
+              &#9733;&#9733;&#9733;&#9733;&#9733; <!-- 5 stars out of 5 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">"I was amazed by how fast and smooth the car buying process was. Truly professional service!”"</p>
+            <p class="customer-name">Liam Sane</p>
+            <p class="customer-role">Business Owner</p>
+            <div class="star-rating">
+              &#9733;&#9733;&#9733;&#9733;&#9734; <!-- 4 stars out of 5 -->
+            </div>
+          </div>
+        </div>
+      
+    </section>
+
+    
+    <section id="blog-news" class="blog-news-section">
+      <h2 class="section-title">Blog / News</h2>
+      <div class="blog-grid">
+        <!-- Car Tips -->
+        <div class="blog-card">
+          <h3 class="blog-category">Car Tips</h3>
+          <p>Discover the latest tips on how to maintain your car, enhance its performance, and improve its lifespan.</p>
+          <a href="#">Read More</a>
+        </div>
+        
+        <!-- Industry News -->
+        <div class="blog-card">
+          <h3 class="blog-category">Industry News</h3>
+          <p>Stay updated with the latest developments, trends, and innovations in the automotive industry.</p>
+          <a href="#">Read More</a>
+        </div>
+        
+        <!-- Maintenance Advice -->
+        <div class="blog-card">
+          <h3 class="blog-category">Maintenance Advice</h3>
+          <p>Get professional advice on routine maintenance and troubleshooting for a better driving experience.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Contact Us</h2>
+    
+      <div class="contact-content">
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+    
+        <div class="contact-info">
+          <div class="contact-card">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+234 912 020 0710</p>
+            </div>
+          </div>
+        
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>olarewajuatanda76@gmail.com</p>
+            </div>
+          </div>
+        
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>No. 19 Love All, Ikosi Ketu, Lagos</p>
+            </div>
+          </div>
+        </div>
+        
+    </section>
+    
+   
+    <section id="gallery" class="gallery-section">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjagoPz-WTix_RFBezqa2dBcMprbVPHZS90g&s" alt="Showroom">
+        </div>
+        <div class="gallery-item">
+          <img src="https://media.istockphoto.com/id/1331288505/photo/handsome-car-seller-showing-purchasing-details-on-digital-tablet-to-black-couple.jpg?s=612x612&w=0&k=20&c=WzEkPRzxIeV-cz6IGVx-SOGiJPVZ_zvLXN8HjqXXeRs=" alt="Staff">
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.shutterstock.com/image-photo/buying-new-car-african-american-260nw-2007803039.jpg" alt="Customers">
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.shutterstock.com/image-photo/person-shaking-hands-front-sold-260nw-255854482.jpg" alt="Cars">
+        </div>
+        <!-- Add more items as needed -->
+      </div>
+    </section>
+    
+    <section id="faq" class="faq-section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>How can I purchase a car from O.M.C?</h3>
+          <p>Simply browse our inventory, select your desired vehicle, and contact us via phone or our form to begin the process.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you accept trade-ins?</h3>
+          <p>Yes! We offer fair and fast trade-in evaluations. Bring your vehicle for assessment or send photos/details online.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I finance my car purchase?</h3>
+          <p>We offer flexible financing options. Our team will guide you through the process based on your financial situation.</p>
+        </div>
+        <!-- Add more as needed -->
+      </div>
+    </section>
+    
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#inventory">Inventory</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-column">
+          <h3>Follow
+            <footer class="footer">
+              <p>Built by Waylon</p>
+              <p>&copy; 2025 O.M.C Car Dealership. All rights reserved.</p>
+            </footer>
+            
+
+  <script src="car.script.js"></script>
+</body>
+</html>
